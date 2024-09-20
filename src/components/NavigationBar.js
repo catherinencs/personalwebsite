@@ -30,10 +30,10 @@ const NavigationBar = () => {
             <Link to="/experiences" className="hover:underline block">Experiences</Link>
           </li>
           <li className="text-center md:text-left p-2 md:p-0">
-            <Link to="/resume" className="hover:underline block">Resume</Link>
+            <Link to="/projects" className="hover:underline block">Projects</Link>
           </li>
           <li className="text-center md:text-left p-2 md:p-0">
-            <Link to="/projects" className="hover:underline block">Projects</Link>
+            <Link to="/resume" className="hover:underline block">Resume</Link>
           </li>
         </ul>
       </div>
