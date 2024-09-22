@@ -12,3 +12,8 @@ code {
     monospace;
 }
 
+.hover-glow-image {
+  filter: drop-shadow(0 0 10px rgba(243, 212, 8, 0.726)); 
+  transition: filter 0.3s ease-in-out;
+}
+

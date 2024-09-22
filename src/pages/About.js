@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import NavigationBar from '../components/NavigationBar';
 
 const About = () => {
+  const [hoveredSection, setHoveredSection] = useState(null);
   const [activeTab, setActiveTab] = useState('Education'); 
 
   // Function to render content based on the active tab
@@ -32,7 +33,7 @@ const About = () => {
                   <li>Info System Design & Development</li>
                   <li>Object-Oriented Design</li>
                   <li>Computer Systems</li>
-                  <li>Mobile Application Development</li>
+                  <li>Mobile Application Development (Android)</li>
                   <li>Algorithms & Data</li>
                   <li>Theory of Computation</li>
                   <li>Web Development</li>
@@ -88,7 +89,6 @@ const About = () => {
               <li>DJ-ing</li>
               <li>Graphic design</li>
               <li>Fashion</li>
-              <li>Watching Snoopy</li>
               <li>Cooking/baking yummy food… and eating them :)</li>
             </ul>
           </div>
@@ -100,7 +100,10 @@ const About = () => {
 
   return (
     <div className="min-h-screen bg-customCream pb-10">
-      <NavigationBar />
+      <NavigationBar 
+            hoveredSection={hoveredSection} 
+            setHoveredSection={setHoveredSection}
+            />
       <div className="container mx-auto px-6 lg:px-20 pt-24 lg:pt-28 flex flex-col lg:flex-row items-center lg:items-start gap-12 lg:gap-16">
         {/* Portrait Section */}
         <div className="w-full lg:w-1/3 flex justify-center">
