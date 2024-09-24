@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 
 const NavigationBar = ({ hoveredSection, setHoveredSection }) => {
   const [isOpen, setIsOpen] = useState(false);
-  const resumePdfPath = 'resume.pdf';
+  const resumePdfPath = 'CatherineSutantoResume.pdf';
 
   // Function to open the resume PDF in a new tab
   const openResume = () => {
@@ -23,9 +23,9 @@ const NavigationBar = ({ hoveredSection, setHoveredSection }) => {
   };
 
   return (
-    <section className="w-full bg-customBlue text-black text-xl fixed top-0 left-0 z-50">
+    <section className="w-full bg-customBlue text-black text-base fixed top-0 left-0 z-50"> 
       <div className="container mx-auto flex justify-between items-center p-4">
-        <div className="text-2xl font-semibold">
+        <div className="text-lg font-semibold"> 
           <Link to="/">Catherine's Room</Link>
         </div>
 

@@ -10,7 +10,7 @@ module.exports = {
       colors: {
         customCream: '#F8EEE7',
         customBlue: '#C9DBD5',
-        customDarkerBlue: '#7D9FAA',
+        customDarkerBlue: '#117789',
       },
     },
   },

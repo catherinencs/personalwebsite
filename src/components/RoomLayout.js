@@ -4,7 +4,7 @@ const RoomLayout = ({ hoveredSection, setHoveredSection }) => {
   const [isGlowing, setIsGlowing] = useState(false); // State to control the glow effect on button press
 
   const openResume = () => {
-    const resumePdfPath = 'resume.pdf';
+    const resumePdfPath = 'CatherineSutantoResume.pdf';
     window.open(resumePdfPath, '_blank');
   };
 
